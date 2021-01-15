@@ -32,7 +32,22 @@ namespace CalculadoraWEB.Properties.Controller
             return num1 - num2;
         }
 
-       
+        [HttpGet]
+        [Route("Multiplicar")]
+        public int MultiplicarGet(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        [HttpPost]
+        [Route("Multiplicar")]
+        public int MultiplicarPost([FromHeader] int num1, [FromHeader] int num2)
+        {
+            return num1 * num2;
+        }
+
+
+
+
 
 
     }
