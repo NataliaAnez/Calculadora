@@ -242,6 +242,7 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
 
         }
+
         [Test]
         public void TestMultiplicarPost2()
         {
@@ -334,6 +335,118 @@ namespace NUnitTestCalculadora
 
         }
 
+        [Test]
+        public void TestDividirPost1()
+        {
+            //Arange=Preparación
+            int num1 = 96;
+            int num2 = 3;
+            int esperado = 32;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+        [Test]
+        public void TestDividirPost2()
+        {
+            //Arange=Preparación
+            int num1 = 144;
+            int num2 = 12;
+            int esperado = 12;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestDividirPost3()
+        {
+            //Arange=Preparación
+            int num1 = 175;
+            int num2 = 5;
+            int esperado = 35;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+        [Test]
+        public void TestDividirGet1()
+        {
+            //Arange=Preparación
+            int num1 = 54;
+            int num2 = 3;
+            int esperado = 18;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+        [Test]
+        public void TestDividirGet2()
+        {
+            //Arange=Preparación
+            int num1 = 2597;
+            int num2 = 53;
+            int esperado =49;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+        [Test]
+        public void TestDividirGet3()
+        {
+            //Arange=Preparación
+            int num1 = 2080;
+            int num2 = 32;
+            int esperado = 65;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.DividirGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
 
     }
 }
