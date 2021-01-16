@@ -137,7 +137,8 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
 
         }
-
+        
+        [Test]
         public void TestRestaPost2()
         {
             //Arange=Preparación
@@ -154,6 +155,7 @@ namespace NUnitTestCalculadora
             Assert.AreEqual(esperado, resultado);
 
         }
+        [Test]
         public void TestRestaPost3()
         {
             //Arange=Preparación
