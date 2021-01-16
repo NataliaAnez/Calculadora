@@ -225,6 +225,114 @@ namespace NUnitTestCalculadora
 
         }
 
+        [Test]
+        public void TestMultiplicarPost1()
+        {
+            //Arange=Preparación
+            int num1 = 2;
+            int num2 = 40;
+            int esperado = 80;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+        [Test]
+        public void TestMultiplicarPost2()
+        {
+            //Arange=Preparación
+            int num1 = 98;
+            int num2 = 32;
+            int esperado = 3136;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestMultiplicarPost3()
+        {
+            //Arange=Preparación
+            int num1 = 61;
+            int num2 = 9;
+            int esperado = 549;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarPost(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+        [Test]
+        public void TestMultiplicarGet1()
+        {
+            //Arange=Preparación
+            int num1 = 25;
+            int num2 = 4;
+            int esperado = 100;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestMultiplicarGet2()
+        {
+            //Arange=Preparación
+            int num1 = 87;
+            int num2 = 43;
+            int esperado = 3741;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TestMultiplicarGet3()
+        {
+            //Arange=Preparación
+            int num1 = 62;
+            int num2 = 9;
+            int esperado = 558;
+            CalculadoraController calc = new CalculadoraController();
+
+            //Act=Ejecución
+
+            int resultado = calc.MultiplicarGet(num1, num2);
+
+            //Assert=Verificación
+            Assert.AreEqual(esperado, resultado);
+
+        }
 
 
     }
